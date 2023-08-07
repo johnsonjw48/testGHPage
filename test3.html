@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Vidéo de formation</title>
+    <style>
+        .page-header {
+            background: #333;
+            color: white;
+            padding: 15px 0;
+            margin-bottom: 20px;
+        }
+
+        .page-header h2 {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .video-container {
+            width: 100%;
+            height: 0;
+            position: relative;
+            padding-bottom: 56.25%; /* pour un ratio 16:9 */
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .section-header {
+            color: #333;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .resources li a {
+            color: #007BFF;
+        }
+
+        .resources li a:hover {
+            color: #0056b3;
+        }
+
+        .comments {
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+
+                <div class="page-header">
+                    <h2>Titre de la vidéo</h2>
+                </div>
+
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="video-description">
+                    <h3 class="section-header">Description</h3>
+                    <p>Cette vidéo va vous apprendre à maîtriser l'art du trading. Vous allez acquérir des compétences précieuses qui vous aideront à faire des choix éclairés et à maximiser vos gains.</p>
+                </div>
+
+                <div class="resources">
+                    <h3 class="section-header">Ressources supplémentaires</h3>
+                    <ul>
+                        <li><a href="your_link_to_resource_1.pdf">Notes de cours</a></li>
+                        <li><a href="your_link_to_resource_2.pdf">PDF téléchargeable</a></li>
+                        <li><a href="your_link_to_resource_3.pdf">Quiz</a></li>
+                        <li><a href="your_link_to_resource_4.pdf">Exercices</a></li>
+                    </ul>
+                </div>
+
+                <div class="comments">
+                    <h3 class="section-header">Commentaires</h3>
+                    <!-- Ajouter un système de commentaires ici -->
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+                <!-- Laissez cet espace pour d'autres éléments de la page, comme des vidéos recommandées, des annonces ou des publicités -->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
